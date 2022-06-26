@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="assets/fonts/Bas/baseticalFont.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
+    <link rel="stylesheet" href="assets/css/games-item.css">
+    <script src="assets/js/game-item.js" defer></script>
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+</head>
+<body class="preloading">
+    <header class="header">
+        <div class="nav-bar">
+            <span class="nav-logo">cume</span>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-item-link nonsearch">home</a></li>
+                <li  class="nav-item">
+                    <a href="news-2.html" class="nav-item-link nonsearch2">news</a>
+                </li>
+                <li class="nav-item"><a href="games.html" class="nav-item-link nonsearch3 nav-item-link--chosen">games</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-item-link nonsearch4">support</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-item-link nonsearch5"><i class="fa-solid fa-user"></i></a></li>
+                <li class="nav-item nav-item--list">
+                    <button class="button is-text" id="menu-button">
+                        <div class="button-inner-wrapper">
+                            <span class="icon menu-icon"></span>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="nav-list-mobile">
+            <li>
+                <ul class="nav-list-mobile_left">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./news-2.html">news</a></li>
+                    <li class="nav-list-mobile_left--select"><a href="./games.html">games</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="nav-list-mobile_left">
+                    <li><a href="./support.html">support</a></li>
+                    <li><a href="./login.html">account</a></li>
+                    <li>search</li> 
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <div class="main" id="butter">
+        <div class="content">
+            <div class="content_left">
+                <div class="content_left_top">
+                    <a href="games.html" class="content_left_top-return content_left_top-return--seperate">return</a>
+                    <span class="content_left_top-tittle">God Of War</span>
+                </div>
+    
+                <div class="content_left_bot">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EE-4GvjKcfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                    <div class=" content_left_bot_imgslide">
+                            <img src="assets/img/game-item/img1.jpg" alt="">
+                            <img src="assets/img/game-item/img1.jpg" alt="">
+                            <img src="assets/img/game-item/img1.jpg" alt="">
+                            <img src="assets/img/game-item/img1.jpg" alt="">
+                            <img src="assets/img/game-item/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content_right">
+                <div class="content_right-tabs">
+                    <i class="fa-solid fa-circle-info tab active" data-tab-target="#info"></i>
+                    <i class="fa-solid fa-list tab" data-tab-target="#list"></i>
+                    <i class="fa-solid fa-display tab" data-tab-target="#system"></i>
+                    <i class="fa-solid fa-message tab" data-tab-target="#cmt"></i>
+                </div>
+    
+                <div class="content_right_info">
+                    <!-- Info -->
+                    <div id="info" class="content_right_info_item active" data-tab-content>
+                        <div class="content_right_info-des">
+                            His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.
+                        </div>
+    
+                        <div class="content_right_info_release">
+                            <div class="content_right_info_release-info">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <div class="content_right_release-info-text">
+                                    <span>Release day</span>
+                                    <span>07/04/2018</span>
+                                </div>
+                            </div>
+    
+                            <div class="content_right_info_release-info">
+                                <i class="fa-solid fa-box-archive" style="color: var(--dark-blue-color);"></i>
+                                <div class="content_right_release-info-text">
+                                    <span style="color: var(--dark-blue-color);">Release on</span>
+                                    <span>Steam</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="content_right_info_release">
+                            <div class="content_right_info_release-info">
+                                <i class="fa-solid fa-star"></i>
+                                <div class="content_right_release-info-text">
+                                    <span>Vote rate</span>
+                                    <span>4.5/5.0</span>
+                                </div>
+                            </div>
+    
+                            <div class="content_right_info_release-info">
+                                <i class="fa-solid fa-bag-shopping" style="color: var(--dark-blue-color);"></i>
+                                <div class="content_right_release-info-text">
+                                    <span style="color: var(--dark-blue-color);">ㅤOn stock</span>
+                                    <span>Yes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- List -->
+                    <div id="list" class="content_right_info_item" data-tab-content>
+                        <div class="content_right_info-category">
+                            <span>Category</span>
+                            <ul>
+                                <li>Single player</li>
+                                <li>RPG - Open world</li>
+                                <li>Adventure</li>
+                                <li>Deep dark fantasy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- System requirement -->
+                    <div id="system" class="content_right_info_item" data-tab-content>
+                        <div class="content_right_info-category">
+                            <span>System requirement</span>
+                            <span>Requires a 64-bit processor and operating system <br>
+                                OS: Windows 10 64-bit<br>
+                                Processor: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)<br>
+                                Memory: 8 GB RAM<br>
+                                Graphics: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)<br>
+                                DirectX: Version 11<br>
+                                Storage: 70 GB available space<br>
+                                Additional Notes: DirectX feature level 11_1 required<br></span>
+                        </div>
+                    </div>
+    
+                    <!-- Comment -->
+                    <div id="cmt" class="content_right_info_item" data-tab-content>
+                        <div class="content_right_info_box">
+    
+                            <div class="content_right_info_cmt_box">
+                                <div class="content_right_info_cmt">
+                                    <div class="content_right_info_cmt-user">
+                                        <img src="assets/img/game-item/user_pic.png" alt="">
+                                        <span>stanky legs</span>
+                                    </div>
+                                    <span class="content_right_info_cmt-cmt"">Bruh why is thanos involve in this game</span>
+                                </div>
+            
+                                <div class="content_right_info_cmt">
+                                    <div class="content_right_info_cmt-user">
+                                        <img src="assets/img/game-item/user_pic.png" alt="">
+                                        <span>stanky legs</span>
+                                    </div>
+                                    <span class="content_right_info_cmt-cmt"">Bruh why is thanos involve in this game</span>
+                                </div>
+            
+                                <div class="content_right_info_cmt">
+                                    <div class="content_right_info_cmt-user">
+                                        <img src="assets/img/game-item/user_pic.png" alt="">
+                                        <span>stanky legs</span>
+                                    </div>
+                                    <span class="content_right_info_cmt-cmt"">Bruh why is thanos involve in this game</span>
+                                </div>
+            
+                                <div class="content_right_info_cmt">
+                                    <div class="content_right_info_cmt-user">
+                                        <img src="assets/img/game-item/user_pic.png" alt="">
+                                        <span>stanky legs</span>
+                                    </div>
+                                    <span class="content_right_info_cmt-cmt"">Bruh why is thanos involve in this game</span>
+                                </div>
+            
+                                <div class="content_right_info_cmt">
+                                    <div class="content_right_info_cmt-user">
+                                        <img src="assets/img/game-item/user_pic.png" alt="">
+                                        <span>stanky legs</span>
+                                    </div>
+                                    <span class="content_right_info_cmt-cmt"">Bruh why is thanos involve in this game</span>
+                                </div>
+                            </div>
+    
+                            <div class="content_right_info_cmt-type">
+                                <input type="text">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content_right_info-btn">
+                        <i class="fa-solid fa-circle-play"></i>
+                        Purchase or rent
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- loading -->
+		<div class="load">
+			<img src="https://i.pinimg.com/originals/a2/dc/96/a2dc9668f2cf170fe3efeb263128b0e7.gif" style="height:40%">
+
+		</div>
+    <div class="modal"></div>
+    <script>
+        // loading
+         $(window).on('load',function(){
+             $('body').removeClass('preloading');
+             $('.load').delay(700).fadeOut('fast');
+         });
+        </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    /* background-color: var(--dark-color); */
+    background-color: var(--dark-color);
+    /* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb::after {
+    content: '';
+    position: absolute;
+    /* top: 0; left: 0; */
+    width: 100px; height: 100px;
+    background-color: var(--dark-blue-color);
+    box-shadow: 5px 5px 5px white;
+    color: red;
+}

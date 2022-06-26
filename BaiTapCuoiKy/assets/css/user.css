@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    background: linear-gradient(#0A0B10, #0B0B0F);
+    scroll-behavior: smooth;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.content_search {
+    display: flex;
+    padding: 0 12vw;
+    position: relative;
+    justify-content: space-between;
+}
+
+.content_search-input {
+    position: relative;
+}
+
+.content_search-input input {
+    background-color: var(--brown-color);
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    outline: none;
+    padding-left: 38px;
+    padding-right: 15px;
+    color: var(--white-color);
+    font-family: 'Brutal Type';
+    margin-bottom: 20px;
+    transition: background-color ease-in 0.1s;
+}
+
+.content_search-input i {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0; transform: translateY(125%);
+    left: 15px;
+}
+
+.content_search-input input:focus {
+    background-color: #212830;
+}
+
+.content_search h2 {
+    color: var(--white-color);
+    font-family: 'Brutal Type';
+    font-size: 2rem;
+    font-weight: 10;
+}
+
+.content_game-switch {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.content_game-switch:focus .content_game-switch_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content_game-switch_box {
+    display: none;
+    position: absolute;
+    left: 100%; top: 0%;
+    width: 150px; height: 80px;
+    background-color: var(--brown-color);
+    box-shadow: 4px 4px 30px var(--dark-color);
+    font-family: 'Brutal Type';
+    border-radius: 5px;
+    z-index: 200;
+    animation: boxFade ease-in 0.05s;
+    cursor: default;
+}
+
+.content_game-switch_box li {
+    text-align: left;
+    margin-left: 20px;
+    color: #706666;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.content_game-switch_box li a {
+    text-decoration: none;
+}
+
+.content_game-switch_box li a:last-child {
+    color: wheat;
+}
+
+.content_game-switch_box--chosen {
+    color: var(--white-color) !important;
+}
+
+@keyframes boxFade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.content_game-switch i {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    margin: auto 10px;
+    transform: translateY(20%);
+    transform: rotate(-90deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.content_game-switch:focus .arrow-down {
+    transform: rotate(90deg);
+}
+
+.content_game-switch h2{
+    color: var(--white-color);
+    font-family: 'Brutal Type';
+    font-size: 2rem;
+    font-weight: 10;
+}
+
+.content_account_info {
+    padding: 0 11.5vw;
+    position: relative;
+}
+
+.content_account_info-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.content_account_info-top img {
+    border-radius: 500000px;
+    width: 130px;
+}
+
+.content_account_info-top span {
+    margin-left: 30px;
+    line-height: 90px;
+    align-self: center;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-family: 'Brutal Type';
+    font-weight: 10;
+}
+
+.content_account_info-bot {
+    border-top: solid 1px var(--brown-color);
+    border-bottom: solid 1px var(--brown-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    padding: 20px 12vw;
+}
+
+.content_achive {
+    margin-bottom: 10px;
+}
+
+.content_achive:last-child {
+    margin-bottom: 0;
+}
+
+.content_achive-top {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.7px;
+}
+
+.content_achive-bot {
+    font-size: 2rem;
+}
+
+.content_account_info-bot_right {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0;
+    width: 20vw;
+    margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+    .content_account_info-bot {
+        padding: 20px 0;    
+    }
+
+    .content_account_info-bot_right {
+        width: 100%;
+    }
+}
+
+.content_info-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content_info-item span:first-child {
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.content_info-item span:last-child {
+    color: #aca2a2;
+}
+
+.content_collection {
+    margin-top: 20px;
+    padding: 0 12vw;
+}
+
+.content_collection h2 {
+    color: var(--white-color);
+    font-family: 'Brutal Type';
+    font-weight: 10;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.content_collection_games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.content_collection-item img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.content_collection-item h2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .content_collection-item img {
+        width: 150px;
+    }
+
+    .content_collection_games {
+        gap: 10px;
+    }
+
+    .content_collection-item h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+    background: linear-gradient(45deg,rgba(214, 236, 113,0.1),rgba(163, 117, 201,0.1));
+    height: 100px; width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px 25px 0 0;
+}
+
+.footer_left {
+    margin: 0 20px;
+    display: flex;
+}
+
+.footer_left-logo {
+    color: var(--white-color);
+    font-size: 4rem;
+    margin: auto;
+}
+
+.footer_middle {
+    margin: auto 0;
+}
+
+.footer_middle-about {
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.footer_middle-info {
+    color: var(--white-color);
+    font-size: 1.3rem;
+}
+
+.footer_right {
+    margin: auto 0;
+}
+
+.footer_right-about {
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 0;
+}
+
+.footer_right-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_right-social {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+    .footer_right {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .new_top-img {
+        margin-bottom: 20px;
+    }
+
+    .new_top-img:last-child {
+        margin-bottom: 0px;
+    }
+
+    .new_top-img {
+        height: 50vw;
+    }
+
+    .new_top-link,.news_mid {
+        padding: 0 5vw;
+    }
+}
